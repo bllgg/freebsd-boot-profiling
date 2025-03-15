@@ -49,7 +49,7 @@ sh tslog.sh > ts.log
 
 ## 6 **Troubleshooting**
 
-#### Scale parameter(```--scale```)
+#### Scale parameter (```--scale```)
 The scale factor adjusts the width of the output SVG.
 
 - Lower values result in a wider flame graph.
@@ -59,14 +59,6 @@ The scale factor adjusts the width of the output SVG.
 sh mkflame.sh --scale <value> > tslog.svg
 ```
 (Default scale is 20)
-
-#### Removing the bios time from the timeflame diagram (```--exclude-bios```)
-Sometimes virtual machines does not reset the CPU timestamp when launching the VM, which may cause incorrect flame graphs.
-
-Run ```mkflame.sh``` with the ```--exclude-bios``` flag to remove BIOS time from the graph:
-```
-sh mkflame.sh --exclude-bios > tslog.svg
-```
 
 #### Unsupported platform error
 Ensure your system is ```amd64```, ```x86_64```, or ```aarch64```. Other architectures may require additional configurations.
