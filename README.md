@@ -47,7 +47,7 @@ sh tslog.sh > ts.log
 ./stackcollapse-tslog.pl < ts.log | sh supercollapse.sh | head
 ```
 
-## 6 **Troubleshooting***
+## 6 **Troubleshooting**
 
 #### Scale parameter(```--scale```)
 The scale factor adjusts the width of the output SVG.
